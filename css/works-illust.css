@@ -70,6 +70,7 @@
   }
   .top-img-area img {
     object-fit:cover;
+    height:100vh;
   }
   .top-visual span {
     background: rgba(220, 220, 220, 0.7);
