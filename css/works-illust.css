@@ -55,7 +55,7 @@
 }
 @media (max-width: 640px) {
   .top-visual {
-    background-image: url(/img/works-Illust-top.jpg);
+    background-image: url(img/works-Illust-top.jpg);
     object-fit: cover;
     object-position: center;
     display: block;
