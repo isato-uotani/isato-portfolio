@@ -224,11 +224,11 @@
 
 .card1 {
   width: 40%;
-  transform: translateX(30%);
+  transform: translateX(20%);
 }
 .card2 {
   width: 40%;
-  transform: translateX(160%);
+  transform: translateX(140%);
 }
 .card3 {
   width: 30%;
