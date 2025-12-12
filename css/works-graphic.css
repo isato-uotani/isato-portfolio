@@ -223,20 +223,20 @@
 }
 
 .card1 {
-  width: 30%;
-  transform: translateX(40%);
+  width: 40%;
+  transform: translateX(30%);
 }
 .card2 {
-  width: 30%;
-  transform: translateX(200%);
+  width: 40%;
+  transform: translateX(160%);
 }
 .card3 {
   width: 30%;
-  transform: translateX(60%);
+  transform: translateX(40%);
 }
 .card4 {
-  width: 30%;
-  transform: translateX(180%);
+  width: 40%;
+  transform: translateX(110%);
 }
 .link-text {
   font-size: 1rem;
