@@ -169,8 +169,10 @@ dd {
   font-size: 1.4rem;
 }
 @media (max-width: 640px) {
+  lv.1 {
+    font-size: 2rem;
   dt {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   dd {
     font-size: 1.4rem;
