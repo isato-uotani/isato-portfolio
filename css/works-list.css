@@ -146,11 +146,11 @@ dl {
   letter-spacing: 2px;
 }
 dt {
-  font-size: 1.7rem;
+  font-size: 2rem;
   border-bottom: 0.75px solid #666;
 }
 dd {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin: 10% 0 15%;
 }
 .sub-dl {
@@ -167,4 +167,12 @@ dd {
 }
 .sub-dl dd {
   font-size: 1.4rem;
+}
+@media (max-width: 640px) {
+  dt {
+    font-size: 1.8rem;
+  }
+  dd {
+    font-size: 1.4rem;
+  }
 }
