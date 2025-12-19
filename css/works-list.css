@@ -137,11 +137,11 @@
 }
 
 .text-area {
-  padding:10%;
+  padding: 10%;
 }
 @media (max-width: 640px) {
   .text-area {
-    padding:3%;
+    padding: 3%;
   }
 }
 
@@ -174,8 +174,8 @@ dd {
   font-size: 1.4rem;
 }
 @media (max-width: 640px) {
-  lv1 {
-    font-size: 1.6rem;
+  .lv1 {
+    font-size: 1.8rem;
   }
   dt {
     font-size: 1.5rem;
