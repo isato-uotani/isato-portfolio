@@ -139,6 +139,11 @@
 .text-area {
   padding:10%;
 }
+@media (max-width: 640px) {
+  .text-area {
+    padding:3%;
+  }
+}
 
 dl {
   width: 100%;
