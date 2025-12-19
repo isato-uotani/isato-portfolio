@@ -128,6 +128,22 @@
     "card6 card6 card6 . card5 card5 card5 card5"
     "card6 card6 card6 . . . . .";
 }
+@media (max-width: 400px) {
+  .grid-1,
+  .grid-2,
+  .grid-3 {
+    display: block;
+    margin-bottom: 0;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    margin-bottom: 10%;
+  }
+}
 /* 説明一覧 */
 
 .lv1 {
