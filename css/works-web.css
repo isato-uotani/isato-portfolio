@@ -93,8 +93,21 @@
   transform: translateX(80%);
   padding: 3% 3% 10%;
 }
-.link-text {
-  font-size: 1rem;
+@media (max-width: 768px) {
+  .card1 {
+    width: 70%;
+    margin-bottom: 20%;
+    transform: translateX(20%);
+    background-color: #fff;
+    padding: 5% 3% 6% 3%;
+  }
+  .card2 {
+    width: 70%;
+    margin-bottom: 20%;
+    transform: translateX(20%);
+    background-color: #fff;
+    padding: 5% 3% 6% 3%;
+  }
 }
 .text-area span {
   display: block;
@@ -128,7 +141,7 @@
   opacity: 1;
   visibility: visible;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .text-area {
     opacity: 1 !important;
     visibility: visible !important;
