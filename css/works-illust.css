@@ -55,11 +55,11 @@
 }
 @media (max-width: 640px) {
   .top-visual {
-    display:block;
+    display: block;
   }
   .top-img-area {
-    width:100%;
-    animation:none;
+    width: 100%;
+    animation: none;
   }
   .top-text-area {
     position: absolute;
@@ -68,8 +68,8 @@
     transform: translate(-50%, -50%);
   }
   .top-img-area img {
-    object-fit:cover;
-    height:100vh;
+    object-fit: cover;
+    height: 100vh;
   }
   .top-visual span {
     background: rgba(220, 220, 220, 0.7);
@@ -128,29 +128,39 @@
 }
 @media (max-width: 768px) {
   .card1 {
-    width: 50%;
+    width: 70%;
     margin-bottom: 20%;
-    transform: translateX(10%);
+    transform: translateX(20%);
+    background-color: #fff;
+    padding: 5% 3% 6% 3%;
   }
   .card2 {
-    width: 50%;
+    width: 70%;
     margin-bottom: 20%;
-    transform: translateX(50%);
+    transform: translateX(20%);
+    background-color: #fff;
+    padding: 3% 3% 6% 3%;
   }
   .card3 {
-    width: 50%;
+    width: 70%;
     margin-bottom: 20%;
-    transform: translateX(30%);
+    transform: translateX(20%);
+    background-color: #fff;
+    padding: 3% 3% 6% 3%;
   }
   .card4 {
-    width: 50%;
+    width: 70%;
     margin-bottom: 20%;
-    transform: translateX(90%);
+    transform: translateX(20%);
+    background-color: #fff;
+    padding: 3% 3% 6% 3%;
   }
   .card5 {
-    width: 50%;
+    width: 70%;
     margin-bottom: 20%;
-    transform: translateX(10%);
+    transform: translateX(20%);
+    background-color: #fff;
+    padding: 3% 3% 6% 3%;
   }
 }
 /* ホバーアクション　画像ズーム */
