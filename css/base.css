@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 10px;
+  color: #666;
+  background-color: #d9d9d9;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+  margin: 0 100px;
+}
+@media (max-width: 768px) {
+  .wrap {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 375px) {
+  .wrap {
+    margin: 0px 10px 0;
+  }
+}
+
+/* ------------------------------
+  基本スタイル
+------------------------------ */
+
+/* ハンバーガーアイコン */
+.hamburger {
+  width: 30px;
+  height: 20px;
+  position: fixed;
+  top: 30px;
+  right: 60px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 2.5px;
+  background: #666;
+  transition: 0.3s;
+}
+
+/* 開いたときの変形 */
+.hamburger.active span:nth-child(1) {
+  background: #ddd;
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  background: #ddd;
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ------------------------------
+  ナビ
+------------------------------ */
+.nav {
+  position: fixed;
+  top: 0;
+  right: -100%; /* 初期は画面外へ */
+  width: 100%;
+  height: 9%;
+  background: #848080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.4s ease;
+  z-index: 1000;
+}
+
+/* スライドイン */
+.nav.open {
+  right: 0;
+}
+
+/* PC：横並び */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: slidein 0.5s forwards;
+  animation-delay: 0.2s;
+}
+
+.nav li:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.nav li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.nav li:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+@keyframes slidein {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/* ------------------------------
+    スマホ（640px 以下）
+------------------------------ */
+@media (max-width: 640px) {
+  .hamburger {
+    right: 30px;
+  }
+  .nav {
+    width: 40%; /* スライド背景 40% */
+    height: 70vh;
+    justify-content: flex-start;
+  }
+
+  .nav ul {
+    flex-direction: column; /* 縦並び */
+    gap: 40px;
+    margin-left: 20px;
+  }
+
+  .nav a {
+    font-size: 26px; /* 少し大きめ */
+  }
+}
+
+.top {
+  width: 100%;
+  height: 100vh;
+}
+.lv1 {
+  font-style: normal;
+  font-size: 4rem;
+}
+.lv2 {
+  text-align: center;
+  display: inline-block;
+  font-size: 3.5rem;
+  border-bottom: 1px solid #666;
+  padding: 1% 10%;
+}
+.lv3 {
+  font-size: 2.4rem;
+}
+.lv4 {
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+.more {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .lv1 {
+    font-size: 2.8rem;
+  }
+  .lv2 {
+    font-size: 2.6rem;
+  }
+  .lv3 {
+    font-size: 2rem;
+  }
+  .lv4 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 400px) {
+  .lv1 {
+    font-size: 2.4rem;
+  }
+  .lv2 {
+    font-size: 2rem;
+  }
+  .lv3 {
+    font-size: 1.7rem;
+  }
+  .lv4 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+.tittle-position {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  text-align: center;
+  padding: 50px 0;
+  width: 100%;
+}
+.arrow {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow span {
+  display: block;
+  background-color: #666;
+  width: 20px;
+  height: 1px;
+}
+.arrow span:nth-child(1) {
+  transform: translateX(15%) rotate(-45deg);
+}
+.arrow span:nth-child(2) {
+  transform: translateX(-15%) rotate(45deg);
+}
+@media (max-width: 640px) {
+  .arrow {
+    position: fixed;
+    right: 20px;
+  }
+}
+
+.animation {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animation.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
+}

@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+.top-visual {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-img-area {
+  width: 50%;
+  animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.top-text-area {
+  width: 50%;
+  position: relative;
+}
+.top-text {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-visual span {
+  position: absolute;
+  top: 35%;
+  z-index: -1;
+  display: block;
+  background: #fffffd;
+  width: 100%;
+  height: 30%;
+  animation: slide 0.5s ease-in;
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.lv1 {
+  margin-bottom: 5%;
+}
+@media (max-width: 640px) {
+  .top-visual {
+    display: block;
+  }
+  .top-img-area {
+    width: 100%;
+    animation: none;
+  }
+  .top-text-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .top-img-area img {
+    object-fit: cover;
+    height: 100vh;
+  }
+  .top-visual span {
+    background: rgba(220, 220, 220, 0.7);
+    z-index: 0;
+  }
+}
+/*  */
+/* main */
+/*  */
+
+.lv2 {
+  text-align: center;
+  margin: 50% 0 20%;
+}
+.sp-works-area {
+  display: none;
+  margin: 20% 0 0;
+}
+
+.card1 {
+  display: flex;
+  justify-content: space-between;
+}
+.card2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.card3 {
+  display: flex;
+  justify-content: space-between;
+}
+.card4 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.card5 {
+  display: flex;
+  justify-content: space-between;
+}
+.img-area {
+  width: 40%;
+}
+.text-area {
+  width: 50%;
+  display: grid;
+  align-content: space-evenly;
+}
+.text-area span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #666;
+  margin: 3% 0 3%;
+}
+.lv3 {
+  font-size: 2.4rem;
+}
+.gap {
+  margin-bottom: 15%;
+  padding: 0 7%;
+  gap: 5%;
+}
+@media (max-width: 960px) {
+  .gap {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .pc-works-area {
+    display: none;
+  }
+  .sp-works-area {
+    display: block;
+  }
+  .sp-card {
+    width: 70%;
+    margin-bottom: 20%;
+    transform: translateX(20%);
+    background-color: #fff;
+    padding: 5% 3% 6% 3%;
+  }
+  .sp-card:hover .card-img img {
+    transform: scale(1.1);
+  }
+  .text-area {
+    width: 100%;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  .lv3 {
+    font-size: 1.5rem;
+  }
+}
+/* ホバーアクション　画像ズーム */
+.card-img {
+  overflow: hidden;
+}
+.card-img img {
+  transition: transform 0.5s ease;
+}
+.card-img:hover img,
+.card-img:hover img {
+  transform: scale(1.1);
+}
+
+/*  */
+/* remove Area */
+/*  */
+.remove-area {
+  margin: 30% 0 10%;
+}
+.card-box {
+  padding: 15%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+}
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  animation: slide 2s ease;
+  overflow: hidden;
+}
+@keyframes slide {
+  from {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.card img:hover {
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+}
+.card-text {
+  padding: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 640px) {
+  .card-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+    margin-bottom: 20%;
+  }
+}
