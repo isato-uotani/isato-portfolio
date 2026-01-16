@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/*  */
+/* main */
+/*  */
+
+.grallry {
+  width: 100%;
+}
+.grallry img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.grid-1,
+.grid-2,
+.grid-3 {
+  margin-bottom: 20%;
+  height: auto;
+}
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+.card5 {
+  grid-area: card5;
+}
+.card6 {
+  grid-area: card6;
+}
+.grid-1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . . . card1 card1 card1 card1"
+    ". . . . card1 card1 card1 card1"
+    ". . . . card1 card1 card1 card1"
+    "card2 card2 card2 . card1 card1 card1 card1"
+    "card2 card2 card2 . card1 card1 card1 card1"
+    "card2 card2 card2 . card1 card1 card1 card1"
+    "card2 card2 card2 . card1 card1 card1 card1"
+    "card2 card2 card2 . card1 card1 card1 card1"
+    "card2 card2 card2 . card1 card1 card1 card1"
+    "card2 card2 card2 . . . . .";
+}
+.grid-2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . . .  card4 card4 card4"
+    ". . . .  card4 card4 card4"
+    "card3 card3 card3 .  card4 card4 card4"
+    "card3 card3 card3 .  card4 card4 card4"
+    "card3 card3 card3  . card4 card4 card4"
+    "card3 card3 card3  . card4 card4 card4"
+    "card3 card3 card3  . card4 card4 card4"
+    "card3 card3 card3  . . . . "
+    "card3 card3 card3  . . . . ";
+}
+.grid-3 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    ". . . . card5 card5 card5 card5"
+    ". . . . card5 card5 card5 card5"
+    ". . . . card5 card5 card5 card5"
+    "card6 card6 card6 . card5 card5 card5 card5"
+    "card6 card6 card6 . card5 card5 card5 card5"
+    "card6 card6 card6 . card5 card5 card5 card5"
+    "card6 card6 card6 . card5 card5 card5 card5"
+    "card6 card6 card6 . card5 card5 card5 card5"
+    "card6 card6 card6 . card5 card5 card5 card5"
+    "card6 card6 card6 . . . . .";
+}
+@media (max-width: 400px) {
+  .grid-1,
+  .grid-2,
+  .grid-3 {
+    display: block;
+    margin-bottom: 0;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    margin-bottom: 10%;
+  }
+}
+/* 説明一覧 */
+
+.lv1 {
+  width: 100%;
+  font-size: 2.4rem;
+  text-align: right;
+  margin-top: 20%;
+}
+
+.text-area {
+  padding: 10%;
+}
+@media (max-width: 640px) {
+  .text-area {
+    padding: 3%;
+  }
+}
+
+dl {
+  width: 100%;
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+dt {
+  font-size: 2rem;
+  border-bottom: 0.75px solid #666;
+}
+dd {
+  font-size: 1.8rem;
+  margin: 7% 0 15%;
+}
+.sub-dl {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  align-items: center;
+  column-gap: 5%;
+  margin-left: 10%;
+}
+.sub-dl dt {
+  font-weight: normal;
+  font-size: 1.4rem;
+  border-bottom: none;
+}
+.sub-dl dd {
+  font-size: 1.4rem;
+}
+@media (max-width: 640px) {
+  .lv1 {
+    font-size: 1.8rem;
+  }
+  dt {
+    font-size: 1.5rem;
+  }
+  dd {
+    font-size: 1.3rem;
+  }
+}
