@@ -129,6 +129,7 @@ dt {
   border-bottom: 0.75px solid #666;
 }
 dd {
+  line-height: 1.8;
   font-size: 1.8rem;
   margin: 7% 0 15%;
 }
