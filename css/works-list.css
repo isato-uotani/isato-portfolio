@@ -37,15 +37,12 @@
   height: 100vh;
 }
 @media (max-width: 768px) {
+  .mockup {
+    width:100%
+  }
   .LP {
     width: 272px;
     height: 606px;
-  }
-  .LP-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 
