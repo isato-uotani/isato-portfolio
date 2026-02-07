@@ -24,10 +24,8 @@
   font-style: normal;
   font-size: 4rem;
   animation: tittleRaise 3s ease;
-  z-index: 3;
-  text-shadow: 1px 1px 20px rgb(125, 125, 125);
+  text-align: right;
 }
-
 
 .grallry {
   position: relative;
