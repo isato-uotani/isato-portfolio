@@ -9,23 +9,37 @@
   height: auto;
 }
 
-.LP {
-  width: 410px;
-  height: 864px;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+.mockup {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 10%;
 }
-.LP-box {
-  display: flex;
-  justify-content: space-between;
+.iphone {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+.LP {
+  width: 68%;
+  position: absolute;
+  top: 10px;
+  left: 58px;
+  bottom: 15px;
+  overflow-y: scroll;
+  z-index: 1;
+  border-radius: 43px;
 }
 .designkamp {
   height: 100vh;
 }
 @media (max-width: 768px) {
   .LP {
-    width: 280px;
-    height: 591px;
+    width: 272px;
+    height: 606px;
   }
   .LP-box {
     display: flex;
