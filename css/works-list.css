@@ -32,6 +32,9 @@
   z-index: 1;
   border-radius: 43px;
 }
+.LP::-webkit-scrollbar {
+  display: none;
+}
 .grallry .lp {
   width: 50%;
   margin: 0 auto;
