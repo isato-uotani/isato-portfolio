@@ -172,9 +172,12 @@ img {
 }
 .lv3 {
   font-size: 2.4rem;
+  text-align: center;
+  margin: 5% 0 4% 0;
 }
 .lv4 {
   font-size: 1.8rem;
+  margin: 10% 0 2% 0;
 }
 p {
   font-size: 1.5rem;
