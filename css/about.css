@@ -125,7 +125,7 @@ body {
     margin-bottom: 0;
   }
   .content3-text {
-    transform: translate(50%, -130%);
+    transform: translate(50%, -100%);
     width: 60%;
     padding: 20px;
     background: rgba(238, 238, 238, 0.7);
