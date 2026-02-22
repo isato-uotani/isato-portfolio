@@ -178,7 +178,7 @@ img {
   margin: 10% 0 2% 0;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.8;
   letter-spacing: 2px;
 }
@@ -200,7 +200,7 @@ p {
     font-size: 1.6rem;
   }
   p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 400px) {
@@ -217,7 +217,7 @@ p {
     font-size: 1.5rem;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 .tittle-position {
