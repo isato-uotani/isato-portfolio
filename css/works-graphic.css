@@ -291,6 +291,7 @@
     margin-bottom: 20%;
     background-color: #fff;
     padding: 5% 3% 6% 3%;
+    box-shadow: 0 2px 5px;
   }
   .sp-card:hover .card-img img {
     transform: scale(1.1);
