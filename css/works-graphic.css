@@ -286,9 +286,9 @@
     display: block;
   }
   .sp-card {
-    width: 70%;
+    width: 85%;
+    margin: 0 auto;
     margin-bottom: 20%;
-    transform: translateX(20%);
     background-color: #fff;
     padding: 5% 3% 6% 3%;
   }
