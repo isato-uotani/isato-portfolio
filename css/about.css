@@ -42,6 +42,9 @@ body {
 .text-area {
   width: 60%;
 }
+.tben td {
+  font-size: 1.7rem;
+}
 .tb {
   margin-bottom: 7%;
 }
