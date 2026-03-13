@@ -250,6 +250,11 @@
   justify-content: space-between;
   flex-direction: row-reverse;
 }
+.card7 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .img-area {
   width: 40%;
 }
