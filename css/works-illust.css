@@ -153,6 +153,22 @@
     padding: 0;
   }
 }
+@media (min-width: 769px) {
+  .pc-works-area > .card8 {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    column-gap: 5%;
+    align-items: center;
+  }
+  .pc-works-area > .card8 > .text-area {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .pc-works-area > .card8 > .img-area {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
 /* タブレット幅でも左右交互のレイアウトを維持する */
 @media (min-width: 641px) and (max-width: 768px) {
   .gap {
