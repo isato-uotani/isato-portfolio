@@ -254,6 +254,11 @@
   display: flex;
   justify-content: space-between;
 }
+.card8 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
 
 .img-area {
   width: 40%;
